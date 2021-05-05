@@ -97,7 +97,7 @@ def speak(text):
 	engine.say(text)
 	engine.runAndWait()
 
-# Gets audio from microphone, assigns speech to text as string to variable 'said'
+# Gets audio from microphone, then assigns speech to text as string to variable 'said'
 def get_audio():
 	r = sr.Recognizer()
 	with sr.Microphone() as source:
